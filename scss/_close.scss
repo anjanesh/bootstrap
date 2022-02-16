@@ -47,3 +47,11 @@
 .btn-close-white {
   filter: var(--#{$prefix}btn-close-white-filter);
 }
+
+@if $enable-dark-mode {
+  [data-bs-theme="dark"] {
+    .btn-close {
+      filter: $btn-close-white-filter;
+    }
+  }
+}
