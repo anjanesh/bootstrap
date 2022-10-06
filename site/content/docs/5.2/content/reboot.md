@@ -95,6 +95,20 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
 | `<h6></h6>` | <span class="h6">h6. Bootstrap heading</span> |
 {{< /bs-table >}}
 
+## Links
+
+Hyperlinks have a default `color` and underline applied. While links change on `:hover`, they don't change based on whether someone `:visited` the link. They also receive no special `:focus` styles.
+
+{{< example >}}
+<a href="#">This is an example link</a>
+{{< /example >}}
+
+Placeholder links—those without an `href`—are targeted with a more specific selector and have their `color` and `text-decoration` reset to their default values.
+
+{{< example >}}
+<a>This is a placeholder link</a>
+{{< /example >}}
+
 ## Horizontal rules
 
 The `<hr>` element has been simplified. Similar to browser defaults, `<hr>`s are styled via `border-top`, have a default `opacity: .25`, and automatically inherit their `border-color` via `color`, including when `color` is set via the parent. They can be modified with text, border, and opacity utilities.
