@@ -97,11 +97,18 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
 
 ## Links
 
-Hyperlinks have a default `color` and underline applied. While links change on `:hover`, they don't change based on whether someone `:visited` the link. They also receive no special `:focus` styles.
+Links have a default `color` and underline applied. While links change on `:hover`, they don't change based on whether someone `:visited` the link. They also receive no special `:focus` styles.
 
 {{< example >}}
 <a href="#">This is an example link</a>
 {{< /example >}}
+
+As of v5.3.x, link `color` is set using `rgba()` and new `-rgb` CSS variables, allowing for easy customization of link color opacity. Change the link color opacity with the `--bs-link-opacity` CSS variable:
+
+{{< example >}}
+<a href="#" style="--bs-link-opacity: .5">This is an example link</a>
+{{< /example >}}
+
 
 Placeholder links—those without an `href`—are targeted with a more specific selector and have their `color` and `text-decoration` reset to their default values.
 

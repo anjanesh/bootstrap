@@ -71,6 +71,8 @@
   --#{$prefix}heading-color: #{$headings-color};
   --#{$prefix}link-color: #{$link-color};
   --#{$prefix}link-hover-color: #{$link-hover-color};
+  --#{$prefix}link-color-rgb: #{to-rgb($link-color)};
+  --#{$prefix}link-hover-color-rgb: #{to-rgb($link-hover-color)};
 
   --#{$prefix}code-color: #{$code-color};
   --#{$prefix}highlight-bg: #{$mark-bg};
