@@ -14,6 +14,7 @@ Colorize text with color utilities. If you want to colorize links, you can use t
 {{< colors.inline >}}
 {{- range (index $.Site.Data "theme-colors") }}
 <p class="text-{{ .name }}{{ with .contrast_color }} bg-{{ . }}{{ end }}">.text-{{ .name }}</p>
+<p class="text-{{ .name }}-emphasis">.text-{{ .name }}-emphasis</p>
 {{- end -}}
 {{< /colors.inline >}}
 <p class="text-body">.text-body</p>

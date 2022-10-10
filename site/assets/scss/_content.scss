@@ -63,6 +63,10 @@
       }
     }
 
+    strong {
+      color: var(--bs-emphasis-color);
+    }
+
     // Prevent breaking of code
     // stylelint-disable-next-line selector-max-compound-selectors
     th,
@@ -84,8 +88,15 @@
 }
 
 .table-swatches {
-  td:first-child { width: 340px; }
-  td:nth-child(2) { width: 200px; }
+  // td:first-child { width: 340px; }
+  // td:nth-child(2) { width: 200px; }
+
+  th {
+    color: var(--bs-emphasis-color);
+  }
+  td code {
+    white-space: nowrap;
+  }
 }
 
 .bd-title {

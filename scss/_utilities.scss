@@ -163,6 +163,11 @@ $utilities: map-merge(
       ),
       values: $utilities-border-colors
     ),
+    "sublte-border-color": (
+      property: border-color,
+      class: border,
+      values: $utilities-border-subtle
+    ),
     "border-width": (
       css-var: true,
       css-variable-name: border-width,
@@ -578,6 +583,11 @@ $utilities: map-merge(
         100: 1
       )
     ),
+    "text-color": (
+      property: color,
+      class: text,
+      values: $utilities-text-emphasis-colors
+    ),
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
@@ -606,6 +616,11 @@ $utilities: map-merge(
         75: .75,
         100: 1
       )
+    ),
+    "sublte-background-color": (
+      property: background-color,
+      class: bg,
+      values: $utilities-bg-subtle
     ),
     // scss-docs-end utils-bg-color
     "gradient": (

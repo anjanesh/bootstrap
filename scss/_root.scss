@@ -27,6 +27,33 @@
   --#{$prefix}body-color-rgb: #{to-rgb($body-color)};
   --#{$prefix}body-bg-rgb: #{to-rgb($body-bg)};
 
+  --#{$prefix}primary-text: #{$primary-text};
+  --#{$prefix}secondary-text: #{$secondary-text};
+  --#{$prefix}success-text: #{$success-text};
+  --#{$prefix}info-text: #{$info-text};
+  --#{$prefix}warning-text: #{$warning-text};
+  --#{$prefix}danger-text: #{$danger-text};
+  --#{$prefix}light-text: #{$light-text};
+  --#{$prefix}dark-text: #{$dark-text};
+
+  --#{$prefix}primary-bg-subtle: #{$primary-bg-subtle};
+  --#{$prefix}secondary-bg-subtle: #{$secondary-bg-subtle};
+  --#{$prefix}success-bg-subtle: #{$success-bg-subtle};
+  --#{$prefix}info-bg-subtle: #{$info-bg-subtle};
+  --#{$prefix}warning-bg-subtle: #{$warning-bg-subtle};
+  --#{$prefix}danger-bg-subtle: #{$danger-bg-subtle};
+  --#{$prefix}light-bg-subtle: #{$light-bg-subtle};
+  --#{$prefix}dark-bg-subtle: #{$dark-bg-subtle};
+
+  --#{$prefix}primary-border-subtle: #{$primary-border-subtle};
+  --#{$prefix}secondary-border-subtle: #{$secondary-border-subtle};
+  --#{$prefix}success-border-subtle: #{$success-border-subtle};
+  --#{$prefix}info-border-subtle: #{$info-border-subtle};
+  --#{$prefix}warning-border-subtle: #{$warning-border-subtle};
+  --#{$prefix}danger-border-subtle: #{$danger-border-subtle};
+  --#{$prefix}light-border-subtle: #{$light-border-subtle};
+  --#{$prefix}dark-border-subtle: #{$dark-border-subtle};
+
   // Fonts
 
   // Note: Use `inspect` for lists so that quoted items keep the quotes.
@@ -45,9 +72,7 @@
   --#{$prefix}body-font-weight: #{$font-weight-base};
   --#{$prefix}body-line-height: #{$line-height-base};
   --#{$prefix}body-color: #{$body-color};
-  // --#{$prefix}body-accent-color: #{$body-accent-color};
 
-  // todo: replace body-accent-color with secondary-color
   --#{$prefix}emphasis-color: #{$body-emphasis-color};
   --#{$prefix}emphasis-color-rgb: #{to-rgb($body-emphasis-color)};
 
@@ -92,13 +117,12 @@
   // scss-docs-end root-border-var
 
   --#{$prefix}emphasis-color: #{$emphasis-color};
-  --#{$prefix}accent-color: #{$accent-color};
-  --#{$prefix}accent-bg: #{$accent-bg};
-  --#{$prefix}accent-border: #{$accent-border};
 
   // TODO: move to form components? or make global?
   --#{$prefix}form-control-bg: var(--#{$prefix}body-bg);
   --#{$prefix}form-control-disabled-bg: var(--#{$prefix}secondary-bg);
+  // --#{$prefix}form-valid-color: #{$form-feedback-valid-color};
+  // --#{$prefix}form-valid-bg: #{$form-feedback-valid-color};
 
   --#{$prefix}highlight-bg: #{$mark-bg};
 
@@ -108,18 +132,7 @@
 }
 
 [data-bs-theme="dark"] {
-  // --#{$prefix}primary: #{$blue-300};
-  // --#{$prefix}success: #{$green-300};
-  // --#{$prefix}danger: #{$red-300};
-  // --#{$prefix}warning: #{$yellow-300};
-  // --#{$prefix}info: #{$cyan-300};
-
-  // --#{$prefix}primary-rgb: #{to-rgb($blue-300)};
-  // --#{$prefix}success-rgb: #{to-rgb($green-300)};
-  // --#{$prefix}danger-rgb: #{to-rgb($red-300)};
-  // --#{$prefix}warning-rgb: #{to-rgb($yellow-300)};
-  // --#{$prefix}info-rgb: #{to-rgb($cyan-300)};
-
+  // scss-docs-start root-darkmode-colors
   --#{$prefix}body-color: #{$body-color-dark};
   --#{$prefix}body-color-rgb: #{to-rgb($body-color-dark)};
   --#{$prefix}body-bg: #{$body-bg-dark};
@@ -139,9 +152,33 @@
   --#{$prefix}tertiary-bg-rgb: #{to-rgb($body-tertiary-bg-dark)};
 
   --#{$prefix}emphasis-color: #{$emphasis-color-dark};
-  --#{$prefix}accent-color: #{$accent-color-dark};
-  --#{$prefix}accent-bg: #{$accent-bg-dark};
-  --#{$prefix}accent-border: #{$accent-border-dark};
+
+  --#{$prefix}primary-text: #{$primary-text-dark};
+  --#{$prefix}secondary-text: #{$secondary-text-dark};
+  --#{$prefix}success-text: #{$success-text-dark};
+  --#{$prefix}info-text: #{$info-text-dark};
+  --#{$prefix}warning-text: #{$warning-text-dark};
+  --#{$prefix}danger-text: #{$danger-text-dark};
+  --#{$prefix}light-text: #{$light-text-dark};
+  --#{$prefix}dark-text: #{$dark-text-dark};
+
+  --#{$prefix}primary-bg-subtle: #{$primary-bg-subtle-dark};
+  --#{$prefix}secondary-bg-subtle: #{$secondary-bg-subtle-dark};
+  --#{$prefix}success-bg-subtle: #{$success-bg-subtle-dark};
+  --#{$prefix}info-bg-subtle: #{$info-bg-subtle-dark};
+  --#{$prefix}warning-bg-subtle: #{$warning-bg-subtle-dark};
+  --#{$prefix}danger-bg-subtle: #{$danger-bg-subtle-dark};
+  --#{$prefix}light-bg-subtle: #{$light-bg-subtle-dark};
+  --#{$prefix}dark-bg-subtle: #{$dark-bg-subtle-dark};
+
+  --#{$prefix}primary-border-subtle: #{$primary-border-subtle-dark};
+  --#{$prefix}secondary-border-subtle: #{$secondary-border-subtle-dark};
+  --#{$prefix}success-border-subtle: #{$success-border-subtle-dark};
+  --#{$prefix}info-border-subtle: #{$info-border-subtle-dark};
+  --#{$prefix}warning-border-subtle: #{$warning-border-subtle-dark};
+  --#{$prefix}danger-border-subtle: #{$danger-border-subtle-dark};
+  --#{$prefix}light-border-subtle: #{$light-border-subtle-dark};
+  --#{$prefix}dark-border-subtle: #{$dark-border-subtle-dark};
 
   --#{$prefix}heading-color: #{$headings-color-dark};
 
@@ -152,4 +189,5 @@
 
   --#{$prefix}border-color: #{$border-color-dark};
   --#{$prefix}border-color-translucent: #{$border-color-translucent-dark};
+  // scss-docs-end root-darkmode-colors
 }
